@@ -1,3 +1,156 @@
+/*
+mobile menu:
+
+Header
+    Creative Studio logo - Hamburger menu svg
+    background {
+    width: 320px;
+    height: 105px;
+    filter: drop-shadow(0px 3px 3px #dadcdc);
+    background-color: #ecf9f6;
+    }
+    Each menu option {
+    width: 206px;
+    height: 24px;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #191654;
+    font-weight: 300;
+    font-family: "Rubik";
+    }
+    Each menu option:hover {
+    color: #43c6ac;
+    }
+    border under each menu option {
+    width: 320px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #43c6ac;
+    }
+    Search
+        icon
+        input {
+        width: 299px;
+        height: 39px;
+        border-radius: 10px;
+        background-color: #1a212b;
+        border: 0.24px solid #191654;
+        }
+*/
+
+/*
+Home - mobile view
+
+Banner
+    gradient background {
+    width: 321px;
+height: 705px;
+background-image: linear-gradient(238deg, #43c5ab 0%, #2e6d7f 50%, #191553 100%);
+    }
+    heading: we are creative {
+    font-size: 48px;
+line-height: 58px;
+text-transform: uppercase;
+color: #ecf9f6;
+font-weight: 400;
+font-family: "Monoton";
+    }
+    paragraph: we are multi {
+    width: 301px;
+height: 159px;
+font-size: 18px;
+line-height: 27px;
+color: #ecf9f6;
+font-weight: 300;
+font-family: "Rubik";
+    }
+    button filled - let's work text {
+    font-size: 21px;
+line-height: 21px;
+text-transform: uppercase;
+color: #191654;
+font-weight: 400;
+font-family: "Rubik";
+    }
+    button filled - let's work background {
+    width: 297px;
+height: 60px;
+border-radius: 5px;
+background-color: #43c6ac;
+    }
+button filled - let's work:hover {
+text -->
+font-size: 21px;
+line-height: 21px;
+text-transform: uppercase;
+color: #191654;
+font-weight: 400;
+font-family: "Rubik";
+
+btn --> 
+width: 297px;
+height: 60px;
+border-radius: 5px;
+background-color: #ecf9f6;
+}
+button outline - view work text {
+color: #43c6ac;
+    }
+button outline - view work background {
+border: 3px solid #43c6ac;
+} 
+button outline - view work:hover {
+text -->
+font-size: 21px;
+line-height: 21px;
+text-transform: uppercase;
+color: #ecf9f6;
+font-weight: 400;
+font-family: "Rubik";
+
+btn --> 
+width: 299px;
+height: 60px;
+border-radius: 5px;
+background-color: #43c6ac;
+border: 3px solid #43c6ac;
+}
+
+Our work
+    heading text {
+    width: 257px;
+height: 39px;
+font-size: 36px;
+line-height: 43px;
+text-transform: uppercase;
+color: #191654;
+font-weight: 400;
+font-family: "Monoton";
+    }
+    heading underline {
+    width: 230px;
+height: 2px;
+background-color: #191654;
+border: 2px solid #43c6ac;
+    }
+
+    text - we will partner {
+    width: 299px;
+height: 71px;
+font-size: 18px;
+line-height: 27px;
+color: #0c0b2a;
+font-weight: 300;
+font-family: "Rubik";
+    }
+
+    Horizontal scroll
+        row 1 {
+        
+        }
+*/
+
 :root {
     /** colours **/
     --yellow:           #FED766; 
@@ -19,4 +172,312 @@
     width: 0.1rem;
     height: 0.1rem;
     visibility: hidden;
+}
+
+/* Code from lab 5 below for reference: */
+
+
+/* Universal Styles */
+
+body {
+    background-color: var(--white);
+    font: 1rem/1.5 "Lato", Arial, sans-serif;
+}
+
+/* Typography */
+
+h1 {
+    font-family: 'Hurricane', cursive;
+}
+
+
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--pop);
+    color: var(--white);
+    padding: 0.25rem;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+header h1 {
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+header .tagline {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: var(--white);
+    margin-top: -1rem;
+}
+.menu-buttons {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: lowercase;
+}
+.menu-toggle-button {
+    display: flex;
+    align-items: center;
+}
+.signin-signup a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+.signin-signup a:first-of-type {
+    color: var(--dark);
+    background-color: var(--accent);
+}
+.signin-signup a:nth-of-type(2) {
+    color: var(--white);
+}
+.signin-signup a:hover {
+    background-color: var(--hover);
+    color: var(--dark);
+}
+/* Hero Banner */
+.inner-container-hero {
+    max-width: 400px;
+    margin: auto;
+}
+
+.hero-banner {
+    background-image: url('../img/hero.webp');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 5rem 1rem;
+}
+.hero-banner h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 3rem;
+}
+.hero-banner span {
+    padding-left: 4rem;
+}
+.hero-banner p {
+    margin: 1rem 0;
+}
+.hero-banner a {
+    background-color: var(--accent);
+    color: var(--dark);
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero-banner .centered {
+    text-align: center;
+    margin: 5rem;
+}
+.hero-banner a:hover {
+    background-color: var(--hover);
+}
+
+/* Parallax */
+.parallax {
+    background-image: url('../img/splash-mobile.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--dark);
+    text-align: left;
+}
+.parallax h2 {
+    font-weight: normal;
+}
+
+.parallax p {
+    padding-top: 1rem;
+}
+
+.parallax > .inner-container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.parallax .inner-container > .right-container {
+    grid-column-start: 2;
+}
+.right-container {
+    padding: 1rem;
+}
+
+/* Horizontal Scroll */
+.inner-container > h2 {
+    text-align: center;
+    padding: 4rem 1rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.horizontal-scroll {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+    padding: 4rem 1rem;
+    margin-bottom: 5rem;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    height: 0.5rem;
+    background-color: white;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+}
+
+.horizontal-scroll .product-card {
+    min-width: 400px;
+    min-height: 650px;
+    background-color: white;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    color: var(--dark);
+    position: relative;
+}
+.horizontal-scroll .product-card h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+.horizontal-scroll .product-card .description {
+    font-size: 1rem;
+    text-align: left;
+}
+.horizontal-scroll .category {
+    color: var(--pop);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    padding: 1rem;
+}
+
+.horizontal-scroll a {
+    background-color: var(--accent);
+    color: var(--dark);
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: calc(100% - 2rem)
+}
+
+.horizontal-scroll a:hover {
+    background-color: var(--hover);
+}
+
+
+
+/* Footer */
+footer {
+    background-color: var(--pop);
+    color: var(--white);
+    padding: 2rem;
+    text-align: left;
+}
+
+.newsletter-signup {
+    display: flex;
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+.newsletter-signup input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--accent);
+    border-right: none;
+}
+
+.newsletter-signup button {
+    background-color: var(--accent);
+    color: var(--dark);
+    border: 1px solid var(--accent);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.newsletter-signup button:hover {
+    background-color: var(--hover);
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+footer .signup-container h3 {
+    color: var(--white);
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+footer ul li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+footer .disclaimer {
+    margin-top: 2rem;
+    font-size: 0.75rem;
+    color: var(--white);
+    text-align: center;
+}
+
+
+@media screen and (min-width: 50rem) {
+    .parallax {
+        background-image: url('../img/splash.webp');
+    }
+
+    .signup-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 2rem;
+        column-gap: 2rem;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin-bottom: 2rem;
+        column-gap: 2rem;
+    }
 }
