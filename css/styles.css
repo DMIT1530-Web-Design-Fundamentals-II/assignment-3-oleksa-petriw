@@ -174,7 +174,7 @@ font-family: "Rubik";
     visibility: hidden;
 }
 
-/* Code from lab 5 below for reference: */
+
 
 
 /* Universal Styles */
@@ -209,7 +209,7 @@ header h1 {
     font-size: 3.5rem;
     font-weight: normal;
     line-height: 2rem;
-    padding-top: 2rem;
+    padding: 2rem 0;
     position: relative;
     display: inline-block;
 }
@@ -240,11 +240,78 @@ header .studio {
     border: none;
 }
 
-/* Menu */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  header .inner-container {
+    margin: auto;
+    max-width: 60rem;
+    padding: unset;
+  }
+
+nav {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  background-color: var(--lt-seafoam-green);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--seafoam-green);
+    line-height: 5rem;
+}
+
+nav li:last-of-type {
+    border-bottom: none;
+    margin-bottom: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--md-blue);
+    padding-left: 2rem;
+}
+
+nav a:hover {
+    color: var(--seafoam-green);
+}
+
+nav input {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    font-size: 2rem;
+    border: 1px solid var(--blue-grey);
+    background-color: var(--lt-seafoam-green);
+    border-radius: 1.5rem;
+    padding: 0.25rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--md-blue);
+}
+
+.show-nav {
+    max-height: unset;
+    overflow: visible;
+}
 
 /* Hero Banner */
 .inner-container-hero {
-    max-width: 400px;
+    max-width: 600px;
+    margin-left: 5%;
 }
 
 .hero-banner {
@@ -391,6 +458,58 @@ header .studio {
     padding-top: 1rem;
 }
 
+.btn-outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 4rem);
+    padding: 1rem;
+    margin: 2rem;
+    border: 3px solid var(--md-blue);
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--md-blue);
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-outline img {
+    margin-left: 0.5rem;
+    width: 1rem;
+    height: auto;
+    filter: invert(8%) sepia(62%) saturate(4146%) hue-rotate(241deg) brightness(87%) contrast(99%);
+}
+
+.btn-outline:hover {
+    background-color: var(--md-blue);
+    color: var(--lt-seafoam-green);
+}
+
+.btn-outline:hover img {
+    filter: invert(100%) sepia(6%) saturate(3202%) hue-rotate(115deg) brightness(103%) contrast(98%);
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.service-card img {
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.service-card h3 {
+    font-size: 2rem;
+    color: var(--seafoam-green);
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: var(--md-blue);
+}
 
 /* Who we are */
 
@@ -411,6 +530,10 @@ header .studio {
 
 .who-we-are p {
     padding-top: 1rem;
+}
+
+.who-we-are > img {
+    width: calc(100% - 1rem)
 }
 
 /* Footer */
@@ -513,21 +636,44 @@ footer .disclaimer {
 }
 
 @media screen and (min-width: 50rem) {
-    .parallax {
-        background-image: url('../img/splash.webp');
-    }
+    .wide-flex {
+        display: flex;
+        max-width: 60rem;
+      }
 
-    .signup-container {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        margin-bottom: 2rem;
-        column-gap: 2rem;
-    }
+      .menu-toggle-button {
+        display: none;
+      }
+    
+      nav li {
+        font-size: 1rem;
+        border-bottom: none;
+      }
 
-    .footer-links {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        margin-bottom: 2rem;
-        column-gap: 2rem;
-    }
+      nav a {
+        padding: 0;
+      }
+
+      nav {
+        justify-content: space-evenly;
+        position: static;
+        overflow: visible;
+        white-space: nowrap;
+      }
+    
+      .main-menu {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+      }
+    
+      .main-menu > li {
+        margin: 1rem;
+      }
+
+      nav input {
+        width: 299px;
+        height: 39px;
+        font-size: 1rem;
+      }
 }
