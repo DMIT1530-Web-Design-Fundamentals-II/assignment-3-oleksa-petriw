@@ -180,159 +180,143 @@ font-family: "Rubik";
 /* Universal Styles */
 
 body {
-    background-color: var(--white);
-    font: 1rem/1.5 "Lato", Arial, sans-serif;
+    background-color: var(--lt-seafoam-green);
+    font: 1rem/1.5 var(--body);
 }
 
 /* Typography */
 
-h1 {
-    font-family: 'Hurricane', cursive;
+h1, h2 {
+    font-family: var(--headings)
 }
-
-
 
 /* Header */
 header {
     position: sticky;
     top: 0;
-    background-color: var(--pop);
+    background-color: var(--lt-seafoam-green);
     color: var(--white);
     padding: 0.25rem;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
 }
+
 header h1 {
+    background-image: linear-gradient(60deg, var(--md-blue), var(--seafoam-green));
+    background-clip: text;
+    color: transparent;
     font-size: 3.5rem;
     font-weight: normal;
+    line-height: 2rem;
+    padding-top: 2rem;
+    position: relative;
+    display: inline-block;
 }
-header .tagline {
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 300;
-    color: var(--white);
-    margin-top: -1rem;
+
+header .line::before {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--md-blue);
+    width: 79%;
+    position: absolute;
+    margin-top: 0.75rem;
+    transform: translateX(3rem);
 }
-.menu-buttons {
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: lowercase;
+
+header .studio {
+    font-family: var(--body);
+    font-variant: small-caps;
+    letter-spacing: 2rem;
+    font-size: 2.5rem;
+    padding-left: 3rem;
 }
+
 .menu-toggle-button {
     display: flex;
     align-items: center;
+    fill: var(--md-blue);
+    background-color: var(--lt-seafoam-green);
+    border: none;
 }
-.signin-signup a {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 2px;
-    letter-spacing: 1px;
-}
-.signin-signup a:first-of-type {
-    color: var(--dark);
-    background-color: var(--accent);
-}
-.signin-signup a:nth-of-type(2) {
-    color: var(--white);
-}
-.signin-signup a:hover {
-    background-color: var(--hover);
-    color: var(--dark);
-}
+
+/* Menu */
+
 /* Hero Banner */
 .inner-container-hero {
     max-width: 400px;
-    margin: auto;
 }
 
 .hero-banner {
-    background-image: url('../img/hero.webp');
+    background-image: linear-gradient(238deg, #43c5ab 0%, #2e6d7f 50%, #191553 100%);
     background-size: cover;
     background-position: center;
-    color: var(--white);
-    padding: 5rem 1rem;
+    color: var(--lt-seafoam-green);
+    padding: 5rem 0.5rem;
 }
 .hero-banner h2 {
     font-size: 3rem;
-    font-weight: 100;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     line-height: 3rem;
 }
-.hero-banner span {
-    padding-left: 4rem;
-}
 .hero-banner p {
     margin: 1rem 0;
 }
 .hero-banner a {
-    background-color: var(--accent);
-    color: var(--dark);
     text-transform: lowercase;
     letter-spacing: 2px;
     padding: 0.75rem 1rem;
     text-decoration: none;
+    text-transform: uppercase;
     border-radius: 5px;
-}
-.hero-banner .centered {
+    display: block;
+    width: 17rem;
     text-align: center;
-    margin: 5rem;
+    margin: 2rem;
 }
-.hero-banner a:hover {
-    background-color: var(--hover);
+.hero-banner .btn-lets-work-together {
+    color: var(--md-blue);
+    background-color: var(--seafoam-green);
 }
-
-/* Parallax */
-.parallax {
-    background-image: url('../img/splash-mobile.webp');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--dark);
-    text-align: left;
+.hero-banner .btn-lets-work-together:hover {
+    background-color: var(--lt-seafoam-green);
 }
-.parallax h2 {
-    font-weight: normal;
+.hero-banner .btn-view-our-work {
+    color: var(--seafoam-green);
+    background-color: transparent;
+    border: 2px solid var(--seafoam-green);
 }
-
-.parallax p {
-    padding-top: 1rem;
+.hero-banner .btn-view-our-work:hover {
+    background-color: var(--seafoam-green);
+    color: var(--lt-seafoam-green);
 }
 
-.parallax > .inner-container {
-    display: grid;
-    grid-template-columns: 45% 55%;
-}
-
-.parallax .inner-container > .right-container {
-    grid-column-start: 2;
-}
-.right-container {
-    padding: 1rem;
-}
 
 /* Horizontal Scroll */
-.inner-container > h2 {
-    text-align: center;
-    padding: 4rem 1rem;
+.our-work {
+    padding: 5rem 0 1rem 1rem;
+    color: var(--md-blue);
+}
+
+.our-work > h2 {
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-decoration: underline;
+    text-decoration-color: var(--seafoam-green);
+}
+
+.our-work p {
+    padding-top: 1rem;
 }
 
 .horizontal-scroll {
     display: flex;
     overflow-x: scroll;
-    gap: 1rem;
-    padding: 4rem 1rem;
-    margin-bottom: 5rem;
+    gap: 0rem;
 }
 
 .horizontal-scroll::-webkit-scrollbar {
@@ -341,97 +325,98 @@ header .tagline {
 }
 
 .horizontal-scroll::-webkit-scrollbar-thumb {
-    background-color: var(--accent);
+    background-color: var(--md-blue);
 }
 
-.horizontal-scroll .product-card {
-    min-width: 400px;
-    min-height: 650px;
+.horizontal-scroll .card {
+    min-width: 300px;
     background-color: white;
     border: none;
-    padding: 1rem;
-    text-align: center;
-    color: var(--dark);
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 1;
 }
-.horizontal-scroll .product-card h2 {
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1rem;
-    margin-bottom: 1rem;
-}
-.horizontal-scroll .product-card .description {
-    font-size: 1rem;
-    text-align: left;
-}
-.horizontal-scroll .category {
-    color: var(--pop);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.75rem;
-    padding: 1rem;
-}
-
 .horizontal-scroll a {
-    background-color: var(--accent);
-    color: var(--dark);
-    text-transform: lowercase;
-    letter-spacing: 2px;
-    padding: 0.75rem 1rem;
+    text-transform: uppercase;
     text-decoration: none;
-    border-radius: 5px;
-    display: block;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    width: calc(100% - 2rem)
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
 }
 
-.horizontal-scroll a:hover {
-    background-color: var(--hover);
+.horizontal-scroll .card-button-green {
+    background-color: var(--seafoam-green);
+    color: var(--md-blue);
 }
 
+.horizontal-scroll .card-button-green:hover {
+    background-color: var(--lt-seafoam-green);
+}
 
+.horizontal-scroll .card-button-blue {
+    background-color: var(--md-blue);
+    color: var(--lt-seafoam-green);
+}
+
+.horizontal-scroll .card-button-blue:hover {
+    background-color: var(--lt-seafoam-green);
+    color: var(--md-blue)
+}
+
+/* What we do */
+
+/* Who we are */
 
 /* Footer */
 footer {
-    background-color: var(--pop);
-    color: var(--white);
-    padding: 2rem;
+    background-color: var(--md-blue);
+    color: var(--lt-seafoam-green);
+    padding: 4rem 0 0 0;
     text-align: left;
+}
+
+.our-offices {
+    padding: 1rem;
+}
+
+.signup-container {
+    padding: 1rem;
 }
 
 .newsletter-signup {
     display: flex;
-    max-width: 100%;
-    margin: 1rem 0;
+    flex-direction: column;
 }
 
 .newsletter-signup input {
-    flex-grow: 1;
-    padding: 0.5rem;
+    padding: 0.75rem;
+    margin: 0.25rem;
     font-size: 1rem;
-    border: 1px solid var(--accent);
-    border-right: none;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: var(--md-blue);
 }
 
 .newsletter-signup button {
-    background-color: var(--accent);
-    color: var(--dark);
-    border: 1px solid var(--accent);
+    background-color: var(--seafoam-green);
+    margin: 0.25rem 0.25rem 3rem 0.25rem;
+    padding: 0.75rem;
+    color: var(--md-blue);
+    border: none;
+    border-radius: 2px;
     font-size: 1rem;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .newsletter-signup button:hover {
-    background-color: var(--hover);
+    background-color: var(--lt-seafoam-green);
 }
 
-footer h3 {
-    font-size: 1.5rem;
-    color: var(--accent);
-    margin-bottom: 0.5rem;
+footer h2 {
+    font-size: 2;
+    margin-bottom: 1rem;
     font-weight: normal;
     text-transform: uppercase;
 }
@@ -441,10 +426,10 @@ footer .signup-container h3 {
 footer ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-bottom: 2rem;
 }
 footer ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
 }
 footer ul li a {
     color: var(--white);
@@ -456,11 +441,24 @@ footer ul li a:hover {
 }
 footer .disclaimer {
     margin-top: 2rem;
-    font-size: 0.75rem;
-    color: var(--white);
-    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    color: var(--lt-seafoam-green);
+    background-color: var(--dk-blue);
 }
 
+.disclaimer img {
+    filter: invert(100%) sepia(6%) saturate(3202%) hue-rotate(115deg) brightness(103%) contrast(98%);
+    height: 60px;
+    padding: 10px;
+}
+
+.disclaimer div {
+    display: flex;
+    max-width: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @media screen and (min-width: 50rem) {
     .parallax {
