@@ -1,156 +1,3 @@
-/*
-mobile menu:
-
-Header
-    Creative Studio logo - Hamburger menu svg
-    background {
-    width: 320px;
-    height: 105px;
-    filter: drop-shadow(0px 3px 3px #dadcdc);
-    background-color: #ecf9f6;
-    }
-    Each menu option {
-    width: 206px;
-    height: 24px;
-    font-size: 30px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #191654;
-    font-weight: 300;
-    font-family: "Rubik";
-    }
-    Each menu option:hover {
-    color: #43c6ac;
-    }
-    border under each menu option {
-    width: 320px;
-    height: 2px;
-    border-radius: 1px;
-    background-color: #43c6ac;
-    }
-    Search
-        icon
-        input {
-        width: 299px;
-        height: 39px;
-        border-radius: 10px;
-        background-color: #1a212b;
-        border: 0.24px solid #191654;
-        }
-*/
-
-/*
-Home - mobile view
-
-Banner
-    gradient background {
-    width: 321px;
-height: 705px;
-background-image: linear-gradient(238deg, #43c5ab 0%, #2e6d7f 50%, #191553 100%);
-    }
-    heading: we are creative {
-    font-size: 48px;
-line-height: 58px;
-text-transform: uppercase;
-color: #ecf9f6;
-font-weight: 400;
-font-family: "Monoton";
-    }
-    paragraph: we are multi {
-    width: 301px;
-height: 159px;
-font-size: 18px;
-line-height: 27px;
-color: #ecf9f6;
-font-weight: 300;
-font-family: "Rubik";
-    }
-    button filled - let's work text {
-    font-size: 21px;
-line-height: 21px;
-text-transform: uppercase;
-color: #191654;
-font-weight: 400;
-font-family: "Rubik";
-    }
-    button filled - let's work background {
-    width: 297px;
-height: 60px;
-border-radius: 5px;
-background-color: #43c6ac;
-    }
-button filled - let's work:hover {
-text -->
-font-size: 21px;
-line-height: 21px;
-text-transform: uppercase;
-color: #191654;
-font-weight: 400;
-font-family: "Rubik";
-
-btn --> 
-width: 297px;
-height: 60px;
-border-radius: 5px;
-background-color: #ecf9f6;
-}
-button outline - view work text {
-color: #43c6ac;
-    }
-button outline - view work background {
-border: 3px solid #43c6ac;
-} 
-button outline - view work:hover {
-text -->
-font-size: 21px;
-line-height: 21px;
-text-transform: uppercase;
-color: #ecf9f6;
-font-weight: 400;
-font-family: "Rubik";
-
-btn --> 
-width: 299px;
-height: 60px;
-border-radius: 5px;
-background-color: #43c6ac;
-border: 3px solid #43c6ac;
-}
-
-Our work
-    heading text {
-    width: 257px;
-height: 39px;
-font-size: 36px;
-line-height: 43px;
-text-transform: uppercase;
-color: #191654;
-font-weight: 400;
-font-family: "Monoton";
-    }
-    heading underline {
-    width: 230px;
-height: 2px;
-background-color: #191654;
-border: 2px solid #43c6ac;
-    }
-
-    text - we will partner {
-    width: 299px;
-height: 71px;
-font-size: 18px;
-line-height: 27px;
-color: #0c0b2a;
-font-weight: 300;
-font-family: "Rubik";
-    }
-
-    Horizontal scroll
-        row 1 {
-        
-        }
-*/
-
 :root {
     /** colours **/
     --yellow: #FED766;
@@ -409,7 +256,7 @@ nav input {
     border: none;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 250px 1;
+    grid-template-rows: 250px 1fr;
 }
 
 .horizontal-scroll a {
@@ -585,7 +432,7 @@ footer {
 }
 
 footer h2 {
-    font-size: 2;
+    font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
     text-transform: uppercase;
