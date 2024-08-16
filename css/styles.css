@@ -153,15 +153,15 @@ font-family: "Rubik";
 
 :root {
     /** colours **/
-    --yellow:           #FED766; 
+    --yellow: #FED766;
     --lt-seafoam-green: #ecf9f6;
-    --seafoam-green:    #43C6AC;
-    --md-blue:          #191654;
-    --dk-blue:          #0C0B2A;
-    --blue-grey:        #6B717E;
+    --seafoam-green: #43C6AC;
+    --md-blue: #191654;
+    --dk-blue: #0C0B2A;
+    --blue-grey: #6B717E;
 
     /** typography **/
-    --headings:'Monoton', cursive;
+    --headings: 'Monoton', cursive;
     --body: 'Rubik', sans-serif;
 }
 
@@ -186,7 +186,8 @@ body {
 
 /* Typography */
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--headings)
 }
 
@@ -198,7 +199,7 @@ header {
     color: var(--white);
     padding: 0.25rem;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -253,6 +254,7 @@ header .studio {
     color: var(--lt-seafoam-green);
     padding: 5rem 0.5rem;
 }
+
 .hero-banner h2 {
     font-size: 3rem;
     font-weight: 400;
@@ -261,9 +263,11 @@ header .studio {
     flex-wrap: wrap;
     line-height: 3rem;
 }
+
 .hero-banner p {
     margin: 1rem 0;
 }
+
 .hero-banner a {
     text-transform: lowercase;
     letter-spacing: 2px;
@@ -276,18 +280,22 @@ header .studio {
     text-align: center;
     margin: 2rem;
 }
+
 .hero-banner .btn-lets-work-together {
     color: var(--md-blue);
     background-color: var(--seafoam-green);
 }
+
 .hero-banner .btn-lets-work-together:hover {
     background-color: var(--lt-seafoam-green);
 }
+
 .hero-banner .btn-view-our-work {
     color: var(--seafoam-green);
     background-color: transparent;
     border: 2px solid var(--seafoam-green);
 }
+
 .hero-banner .btn-view-our-work:hover {
     background-color: var(--seafoam-green);
     color: var(--lt-seafoam-green);
@@ -300,7 +308,7 @@ header .studio {
     color: var(--md-blue);
 }
 
-.our-work > h2 {
+.our-work>h2 {
     font-weight: 100;
     text-transform: uppercase;
     font-size: 3rem;
@@ -336,6 +344,7 @@ header .studio {
     grid-template-columns: 1fr;
     grid-template-rows: 250px 1;
 }
+
 .horizontal-scroll a {
     text-transform: uppercase;
     text-decoration: none;
@@ -364,8 +373,45 @@ header .studio {
 }
 
 /* What we do */
+.what-we-do {
+    padding: 5rem 0 1rem 1rem;
+    color: var(--md-blue);
+}
+
+.what-we-do>h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-decoration: underline;
+    text-decoration-color: var(--seafoam-green);
+}
+
+.what-we-do p {
+    padding-top: 1rem;
+}
+
 
 /* Who we are */
+
+.who-we-are {
+    padding: 5rem 0 1rem 1rem;
+    color: var(--md-blue);
+    background-color: var(--seafoam-green);
+}
+
+.who-we-are>h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-decoration: underline;
+    text-decoration-color: var(--lt-seafoam-green);
+}
+
+.who-we-are p {
+    padding-top: 1rem;
+}
 
 /* Footer */
 footer {
@@ -420,25 +466,31 @@ footer h2 {
     font-weight: normal;
     text-transform: uppercase;
 }
+
 footer .signup-container h3 {
     color: var(--white);
 }
+
 footer ul {
     list-style: none;
     padding: 0;
     margin-bottom: 2rem;
 }
+
 footer ul li {
     margin-bottom: 0;
 }
+
 footer ul li a {
     color: var(--white);
     text-decoration: none;
     transition: color 0.3s;
 }
+
 footer ul li a:hover {
     text-decoration: underline;
 }
+
 footer .disclaimer {
     margin-top: 2rem;
     font-size: 1rem;

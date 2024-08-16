@@ -1,167 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Creative Studio - Home</title>
 
-		<!-- Meta Information -->
-		<meta name="author" content="Oleksa Petriw">
-		<meta name="description" content="This website is an assignment that demonstrates horizontal scrolling and forms">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Creative Studio - Home</title>
 
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- Meta Information -->
+	<meta name="author" content="Oleksa Petriw">
+	<meta name="description" content="This website is an assignment that demonstrates horizontal scrolling and forms">
 
-		<!-- Stylesheets -->
-		<link rel="stylesheet" type="text/css" href="css/modern-reset.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	</head>
-	<body>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;700&display=swap"
+		rel="stylesheet">
 
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/modern-reset.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
 
+<body>
 
+	<header>
+		<div class="inner-container">
+			<h1>Creative<span class="line"></span><br><span class="studio">studio</span></h1>
+			<button class="menu-toggle-button">
+				<svg viewBox="0 0 100 80" width="40" height="40">
+					<rect width="100" height="20" rx="8"></rect>
+					<rect y="30" width="100" height="20" rx="8"></rect>
+					<rect y="60" width="100" height="20" rx="8"></rect>
+				</svg>
+			</button>
+		</div>
+	</header>
 
-
-		<!-- code from lab 5 below for reference  -->
-		<header>
-			<div class="inner-container">
-				<h1>Creative<span class="line"></span><br><span class="studio">studio</span></h1>
-				<button class="menu-toggle-button">
-                    <svg viewBox="0 0 100 80" width="40" height="40">
-                        <rect width="100" height="20" rx="8"></rect>
-                        <rect y="30" width="100" height="20" rx="8"></rect>
-                        <rect y="60" width="100" height="20" rx="8"></rect>
-                    </svg>
-                </button>
+	<main>
+		<!-- Hero Banner -->
+		<section class="hero-banner">
+			<div class="inner-container-hero">
+				<h2>We are creative studio</h2>
+				<p>We are a multi-disciplinary design,
+					development, and digital merketing
+					agency based in New York and
+					Manhattan Beach. We specialize in
+					creating experiences and engagements.
+				</p>
+				<a href="#" class="btn-lets-work-together">Let's work together!</a>
+				<a href="#" class="btn-view-our-work">View our work</a>
 			</div>
-		</header>
-
-		<main>
-			<!-- Hero Banner -->
-			<section class="hero-banner">
-				<div class="inner-container-hero">
-					<h2>We are creative studio</h2>
-					<p>We are a multi-disciplinary design,
-						development, and digital merketing
-						agency based in New York and 
-						Manhattan Beach. We specialize in 
-						creating experiences and engagements.
-					</p>
-					<a href="#" class="btn-lets-work-together">Let's work together!</a>
-					<a href="#" class="btn-view-our-work">View our work</a>
+		</section>
+		<!-- Horizontal Scroll Section -->
+		<div class="inner-container our-work">
+			<h2>Our Work</h2><span class="line"></span>
+			<p>We partner with big brands to create
+				powerful products and experiences.
+				Take a peak at our projects!
+			</p>
+		</div>
+		<section class="horizontal-scroll">
+			<div class="card-column">
+				<div class="card">
+					<img src="./img/user-experience.png" alt="user experience image">
+					<a href="#" class="card-button-blue">User Experience</a>
 				</div>
-			</section>
-			<!-- Horizontal Scroll Section -->
-			<div class="inner-container our-work">
-				<h2>Our Work</h2><span class="line"></span>
-				<p>We partner with big brands to create 
-					powerful products and experiences.
-					Take a peak at our projects!
+				<div class="card">
+					<img src="./img/web-design.png" alt="web designer with coffee">
+					<a href="#" class="card-button-green">Web Design & Development</a>
+				</div>
+			</div>
+			<div class="card-column">
+				<div class="card">
+					<img src="./img/web-design-dev.png" alt="web designer at computer">
+					<a href="#" class="card-button-green">Website Design & Development</a>
+				</div>
+				<div class="card">
+					<img src="./img/branding-logo.png" alt="working at desk">
+					<a href="#" class="card-button-blue">Branding - Logo</a>
+				</div>
+			</div>
+			<div class="card-column">
+				<div class="card">
+					<img src="./img/branding.png" alt="branding image">
+					<a href="#" class="card-button-blue">Branding</a>
+				</div>
+				<div class="card">
+					<img src="./img/marketing.png" alt="digital marketing image">
+					<a href="#" class="card-button-green">Digital Marketing</a>
+				</div>
+			</div>
+			<div class="card-column">
+				<div class="card">
+					<img src="./img/app-design.png" alt="app design image">
+					<a href="#" class="card-button-green">App Design & Development</a>
+				</div>
+				<div class="card">
+					<img src="./img/ux-design.png" alt="UX and web design image">
+					<a href="#" class="card-button-blue">UX & Web Design</a>
+				</div>
+			</div>
+		</section>
+		<div class="inner-container what-we-do">
+			<h2>What we do!</h2><span class="line"></span>
+			<p>
+				We partner with company leaders to 
+				help you understand your customers 
+				better, and build the right products 
+				and experiences to serve them. We 
+				work with you to define your vision 
+				and improve your business 
+				outcomes.
+			</p>
+		</div>
+
+
+
+		<div class="inner-container who-we-are">
+			<h2>Who we are</h2><span class="line"></span>
+			<p>
+				We are am award-winning creative 
+				multi-disciplinary design, 
+				development, and digital marketing 
+				agency consisting of a 60-strong 
+				team of designers, engineers, and 
+				strategists. We have been crafting 
+				digital and brand experiences for 
+				over 15 years and we love all 
+				challenges that come our way.
+			</p>
+			<p>
+				We are authentic, down-to-earth,
+				and put our clients' needs first every 
+				time. We aim to be the brightest
+				minds in digital-intellect, and are 
+				always looking for better ways to
+				create exceptional user experiences.
+			</p>
+		</div>
+
+	</main>
+	<footer>
+		<div class="inner-container">
+
+			<div class="our-offices">
+				<h2>Our Offices</h2>
+				<div>
+					<ul>
+						<li>136 W 30th Street</li>
+						<li>New York, NY 10038</li>
+						<li>(310) 570 - 4482</li>
+						<li>Mon - Fri 9am - 5pm</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li>1800 Larsson Street</li>
+						<li>Manhattan Beach, CA 90266</li>
+						<li>(424) 223 - 3767</li>
+						<li>Mon - Fri 8:30am - 4:30pm</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li>Email us, say hello!</li>
+						<li>hello@creativestudio.com</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="signup-container">
+				<div>
+					<h2>Subscribe to Our Newsletter</h3>
+				</div>
+				<div>
+					<form class="newsletter-signup">
+						<input type="email" placeholder="Email Address" required>
+						<button type="submit">Subscribe Now!</button>
+					</form>
+				</div>
+				<div>
+					<p>You may unsubscribe from our
+						monthly newsletter at any time.
+						Check out our Privacy Policy for
+						more information on how we store
+						and protect your data.
+					</p>
+				</div>
+			</div>
+
+
+			<div class="disclaimer">
+				<div>
+					<img src="./img/svg/instagram-brands.svg" alt="instagram logo">
+					<img src="./img/svg/facebook-f-brands.svg" alt="facebook logo">
+					<img src="./img/svg/mailchimp-brands.svg" alt="mailchimp logo">
+				</div>
+				<p>Copyright 2022 | For educational purposes only | Privacy Policy
 				</p>
 			</div>
-			<section class="horizontal-scroll">
-				<div class="card-column">
-					<div class="card">
-						<img src="./img/img1.png" alt="">
-						<a href="#" class="card-button-blue">User Experience</a>
-					</div>
-					<div class="card">
-						<img src="./img/img5.png" alt="">
-						<a href="#" class="card-button-green">Web Design & Development</a>
-					</div>
-				</div>
-				<div class="card-column">
-					<div class="card">
-						<img src="./img/img2.png" alt="">
-						<a href="#" class="card-button-green">Website Design & Development</a>
-					</div>
-					<div class="card">
-						<img src="./img/img6.png" alt="">
-						<a href="#" class="card-button-blue">Branding - Logo</a>
-					</div>
-				</div><div class="card-column">
-					<div class="card">
-						<img src="./img/img3.png" alt="">
-						<a href="#" class="card-button-blue">Branding</a>
-					</div>
-					<div class="card">
-						<img src="./img/img7.png" alt="">
-						<a href="#" class="card-button-green">Digital Marketing</a>
-					</div>
-				</div><div class="card-column">
-					<div class="card">
-						<img src="./img/img4.png" alt="">
-						<a href="#" class="card-button-green">App Design & Development</a>
-					</div>
-					<div class="card">
-						<img src="./img/img8.png" alt="">
-						<a href="#" class="card-button-blue">UX & Web Design</a>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer>
-			<div class="inner-container">
-				
-				<div class="our-offices">
-					<h2>Our Offices</h2>
-					<div>
-						<ul>
-							<li>136 W 30th Street</li>
-							<li>New York, NY 10038</li>
-							<li>(310) 570 - 4482</li>
-							<li>Mon - Fri 9am - 5pm</li>
-						</ul>
-					</div>
-					<div>
-						<ul>
-							<li>1800 Larsson Street</li>
-							<li>Manhattan Beach, CA 90266</li>
-							<li>(424) 223 - 3767</li>
-							<li>Mon - Fri 8:30am - 4:30pm</li>
-						</ul>
-					</div><div>
-						<ul>
-							<li>Email us, say hello!</li>
-							<li>hello@creativestudio.com</li>
-						</ul>
-					</div>
-				</div>
+		</div>
+	</footer>
 
-				<div class="signup-container">
-					<div>
-						<h2>Subscribe to Our Newsletter</h3>
-					</div>
-					<div>
-						<form class="newsletter-signup">
-							<input type="email" placeholder="Email Address" required>
-							<button type="submit">Subscribe Now!</button>
-						</form>
-					</div>
-					<div>
-						<p>You may unsubscribe from our 
-							monthly newsletter at any time.
-							Check out our Privacy Policy for 
-							more information on how we store 
-							and protect your data.
-						</p>
-					</div>
-				</div>
-				
-				
-				<div class="disclaimer">
-					<div>
-						<img src="./img/svg/instagram-brands.svg" alt="instagram logo">
-						<img src="./img/svg/facebook-f-brands.svg" alt="facebook logo">
-						<img src="./img/svg/mailchimp-brands.svg" alt="mailchimp logo">
-					</div>
-					<p>Copyright 2022 | For educational purposes only | Privacy Policy
-					</p>
-				</div>
-			</div>
-		</footer>
-		
-	</body>
+</body>
+
 </html>
